@@ -1,0 +1,344 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+
+/* RESET CSS */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  font-size: 1.5em;
+  color: #333;
+}
+
+p{
+  font-size: 1em;
+  color: #777;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  width: 100%;
+  float: left;
+  /* flutua para a esquerda */
+  padding: 50px 8%;
+  /*o 8 é pra que depedendo do campo da tela, 50 é muito. entao se a tela nao tiver espaço pra 50, ele trabalha com 8 da tela*/
+  background-color: #13c7ae;
+  /* background: linear-gradient(red,blue); pra fazer um degrade */
+}
+
+.logo a {
+  width: 221px;
+  height: 48px;
+  float: left;
+  font-size: 0;
+  /* nao deixa enchergar o texto */
+  background: url(../img/MicrosoftTeams-image\ \(2\).png);
+}
+
+.cabecalho form {
+  width: 30%;
+  float: right;
+}
+
+.cabecalho form input[type="search"] {
+  width: 85%;
+  float: left;
+  padding: 15px 10px 15px 10px;
+  border-radius: 15px 0 0 15px;
+}
+
+.cabecalho button {
+  width: 15%;
+  float: right;
+  padding: 15px 10px;
+  background-color: #0cae98;
+  color: white;
+  cursor: pointer;
+  /* quando o mouse passar por cima o cursor vai ficar diferente para indicar q ele é um botao */
+  border-radius: 0px 15px 15px 0px;
+}
+
+/* MENU */
+.menu {
+  width: 100%;
+  float: left;
+  background-color: #111;
+  padding: 18px 8%;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  color: #9d9d9d;
+  margin-right: 25px;
+  font-size: 19px;
+}
+
+.menu li a:hover {
+  color: white;
+  /* font-size: 30px;
+  border: 2px solid red; */
+}
+
+
+/* SOCIAL ICONS */
+.social-icons {
+  float: right;
+}
+
+.social-icons a {
+  color: #fff;
+  float: left;
+  margin-left: 13px;
+}
+
+.btn-facebook:hover {
+  color: #3b5998;
+}
+
+.btn-twitter:hover {
+  color: #00acee;
+}
+
+.btn-google:hover {
+  color: #db4a39;
+}
+
+/* PRINCIPAL */
+.principal{
+  width: 100%;
+  float: left;
+  padding: 20px 8%;
+}
+.sobre{
+width: 70%;
+float: left;
+padding: 0 20px 20px 0;
+}
+.sobre h2{
+  margin-bottom: 15px;
+}
+.sobre img{
+  width: 50%;
+  float: left;
+  border-radius: 5px;
+  margin: 0 15px 15px 0;
+}
+.sobre p{
+  text-align: justify;
+}
+/* SIDEBAR */
+.onde-estamos{
+  width: 30%;
+  float: right;
+  padding: 10px 20px;
+  background-color: #bececc44;
+  border-radius: 7px;
+}
+.onde-estamos h2{
+  margin-bottom: 7px;
+}
+.onde-estamos p{
+  color: #111;
+}
+.onde-estamos iframe{
+  width:100%;
+  height:250px;
+  margin:0px 20px 20px 0px;
+}
+.onde-estamos li{
+  color: #777;
+  margin-bottom: 10px ;
+}
+.onde-estamos i{
+  margin-right: 6px;
+}
+
+/* NEWSLETTER */
+.newsletter{
+  width: 100%;
+  float: left;
+  background-color: #111;
+  padding: 50px 8%;
+}
+.newsletter h3{
+  font-size: 1.8em;
+  color: #fff;
+}
+.newsletter p{
+  font-size: 1.2em;
+  color: #fff;
+}
+.newsletter form{
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+.newsletter form input{
+  width: 40%;
+  margin-right: 1%;
+  padding: 15px 10px;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  background-color: initial; /*vai buscar a cor que ta depois da borda*/
+  float: left;
+}
+
+.newsletter button{
+  width: 18%;
+  background-color: #fff;
+  padding: 15px 10px;
+  border-radius: 7px;
+  float: right;
+  cursor: pointer;
+}
+
+/* RODAPE */
+.rodape{
+  width: 100%;
+  float: left;
+  background-color: #13c7ae;
+  padding: 20px 8%;
+}
+.rodape p{
+  color: #fff;
+}
